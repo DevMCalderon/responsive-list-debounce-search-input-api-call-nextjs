@@ -11,9 +11,5 @@ export default async function Home() {
 
   const data = await getData();
 
-  return (
-    <div className="mx-auto sm:w-2/3 lg:w-1/3">
-      <ItemList data={data} />
-    </div>
-  );
+  return <ItemList data={data} />;
 }
